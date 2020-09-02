@@ -7,6 +7,7 @@
 # By considering the terms in the Fibonacci sequence whose values do not       #
 # exceed four million, find the sum of the even-valued terms.                  #
 ################################################################################
+
 ################################################################################
 # FIRST APPROACH: This solution is simple, but it is not efficient, since it
 # calculates the same values many times.
@@ -16,9 +17,9 @@ def recursive_fibonacci(n):
         return n
     return recursive_fibonacci(n-1) + recursive_fibonacci(n-2)
 
+################################################################################
 # SECOND APPROACH: This solution is still simple, but it is more efficient,
-# reaching a computational complexity of O(n)
-# calculates the same values many times.
+# reaching a computational complexity of O(n).
 
 def iterative_fibonacci(n):
     next_ = 1
